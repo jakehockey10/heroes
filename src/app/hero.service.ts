@@ -17,4 +17,14 @@ export class HeroService {
     return Observable.of(HEROES).delay(3000);
   }
 
+  getHero(id: number): Observable<Hero> {
+    let hero = null;
+    this.getHeroes()
+      .subscribe(
+      (heroes) => hero = heroes.find(h => h.id === id),
+      (error) => console.log(error)
+      );
+    return Observable.of(hero);
+  }
+
 }

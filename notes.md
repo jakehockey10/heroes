@@ -6,4 +6,10 @@
   - run command `ng g component hero-detail`
 - create reusable service to manage hero data calls
   - run command `ng g service hero`
-  
+- Routing
+  - Turn `AppComponent` into an application shell that only handles navigation.
+  - Relocate the *Heroes* concerns within the current `AppComponent` to a separate `HeroesComponent`.
+  - Add routing.
+  - Create a new `DashboardComponent`.
+  - Tie the *Dashboard* into the navigation structure.
+  - Key note from tutorial: The `Router` manages the observables it provides and localizes the subscriptions.  The subscriptions are cleaned up when the component is destroyed, protecting against memory leaks, so you don't need to unsubscribe from the route `params` `Observable`.
