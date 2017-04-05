@@ -17,3 +17,5 @@
   - Get the hero data from a server.
   - Let users add, edit, and delete hero names.
   - Save the changes to the server.
+  - Run the command `npm install angular-in-memory-web-api --save`
+  - Use Observables (tutorial used Promsies until the search component).
