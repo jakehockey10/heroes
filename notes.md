@@ -13,3 +13,9 @@
   - Create a new `DashboardComponent`.
   - Tie the *Dashboard* into the navigation structure.
   - Key note from tutorial: The `Router` manages the observables it provides and localizes the subscriptions.  The subscriptions are cleaned up when the component is destroyed, protecting against memory leaks, so you don't need to unsubscribe from the route `params` `Observable`.
+- Http
+  - Get the hero data from a server.
+  - Let users add, edit, and delete hero names.
+  - Save the changes to the server.
+  - Run the command `npm install angular-in-memory-web-api --save`
+  - Use Observables (tutorial used Promsies until the search component).
