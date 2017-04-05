@@ -1,0 +1,2 @@
+- install angular/cli [https://cli.angular.io](https://cli.angular.io) with command `npm install -g @angular/cli`
+- run command `ng new heroes`.
