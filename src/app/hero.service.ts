@@ -45,7 +45,7 @@ export class HeroService {
     const url = `${this.heroesUrl}/${id}`;
     return this.http
       .delete(url, { headers: this.headers })
-      .map(response => null)
+      .map(response => response.json() || {})
       .catch(this.handleError);
   }
 

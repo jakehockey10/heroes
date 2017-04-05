@@ -1,0 +1,5 @@
+{
+  "name": "heroes-electron",
+  "version": "0.1.0",
+  "main": "electron.js"
+}

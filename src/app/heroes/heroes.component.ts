@@ -42,19 +42,23 @@ export class HeroesComponent implements OnInit {
     name = name.trim();
     if (!name) { return; }
     this.heroService.create(name)
-      .map(hero => {
+      .subscribe(
+      hero => {
         this.heroes.push(hero);
         this.selectedHero = null;
-      });
+      },
+      error => console.log(error));
   }
 
   delete(hero: Hero): void {
     this.heroService
       .delete(hero.id)
-      .map(() => {
+      .subscribe(
+      () => {
         this.heroes = this.heroes.filter(h => h !== hero);
         if (this.selectedHero === hero) { this.selectedHero = null; }
-      });
+      },
+      error => console.log(error));
   }
 
 }
