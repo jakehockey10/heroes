@@ -6,4 +6,10 @@
   - run command `ng g component hero-detail`
 - create reusable service to manage hero data calls
   - run command `ng g service hero`
+- Routing
+  - Turn `AppComponent` into an application shell that only handles navigation.
+  - Relocate the *Heroes* concerns within the current `AppComponent` to a separate `HeroesComponent`.
+  - Add routing.
+  - Create a new `DashboardComponent`.
+  - Tie the *Dashboard* into the navigation structure.
   
