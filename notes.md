@@ -4,3 +4,6 @@
 - implement master/detail views
 - refactor to separate components
   - run command `ng g component hero-detail`
+- create reusable service to manage hero data calls
+  - run command `ng g service hero`
+  
