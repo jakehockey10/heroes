@@ -2,3 +2,5 @@
 - run command `ng new heroes`.
 - implement simple hero editor.
 - implement master/detail views
+- refactor to separate components
+  - run command `ng g component hero-detail`
